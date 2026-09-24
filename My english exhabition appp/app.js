@@ -10,6 +10,13 @@ let fitbList = [];
 let fitbIdx = 0;
 let fitbScore = 0;
 
+function bumpChip(id) {
+  var chip = document.getElementById(id);
+  chip.classList.remove('bump');
+  void chip.offsetWidth;
+  chip.classList.add('bump');
+}
+
 function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -167,6 +174,7 @@ function renderMCQ() {
       });
       if (btn.dataset.correct === 'true') {
         mcqScore++;
+        bumpChip('mcqScoreChip');
       } else {
         btn.classList.add('wrong');
       }
@@ -228,6 +236,7 @@ function renderFITB() {
       var blank = document.getElementById('blankSlot');
       if (btn.dataset.correct === 'true') {
         fitbScore++;
+        bumpChip('fitbScoreChip');
         if (blank) blank.textContent = q.opts[q.ans];
       } else {
         btn.classList.add('wrong');
@@ -272,6 +281,60 @@ function showFinalScore() {
     '<button class="btn-primary full" id="playAgain">Play again</button>' +
     '</div>';
 
-  document.getElementById('playAgain').addEventListener('click', function() { show('landingScreen'); });
+  document.getElementById('playAgain').addEventListener('click', function() {
+    var c = document.getElementById('confettiCanvas');
+    if (c) c.remove();
+    show('landingScreen');
+  });
   show('finalScreen');
+  if (pct >= 50) launchConfetti();
+}
+
+// ---- Confetti ----
+function launchConfetti() {
+  var old = document.getElementById('confettiCanvas');
+  if (old) old.remove();
+  var canvas = document.createElement('canvas');
+  canvas.id = 'confettiCanvas';
+  document.body.appendChild(canvas);
+  var ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  var colors = ['#F28A2E','#E8751A','#F5A04D','#3D2218','#C4956E','#2E7D32','#DEB99A'];
+  var pieces = [];
+  for (var i = 0; i < 80; i++) {
+    pieces.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * -canvas.height,
+      w: Math.random() * 8 + 4,
+      h: Math.random() * 6 + 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 3,
+      vy: Math.random() * 3 + 2,
+      rot: Math.random() * 360,
+      rv: (Math.random() - 0.5) * 8
+    });
+  }
+
+  var frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pieces.forEach(function(p) {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rot += p.rv;
+      p.vy += 0.04;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot * Math.PI / 180);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+      ctx.restore();
+    });
+    frame++;
+    if (frame < 180) requestAnimationFrame(draw);
+    else canvas.remove();
+  }
+  draw();
 }
