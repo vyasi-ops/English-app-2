@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Idiom Café</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== LANDING ===== -->
+  <div id="landingScreen" class="screen active">
+    <div class="topbar">
+      <div class="topbar-logo">
+        <div class="logo-dot">☕</div>
+        <span class="topbar-name">Idiom Café</span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-badge">English exhibition</div>
+      <div class="hero-title">Idiom Café</div>
+      <p class="hero-desc">Master 80 everyday idioms through flashcards, quizzes, and fill-in-the-blank challenges. A fresh menu every session.</p>
+      <div class="hero-pills">
+        <span class="pill active"><span class="pill-icon">📇</span> Flashcards</span>
+        <span class="pill"><span class="pill-icon">❓</span> MCQs</span>
+        <span class="pill"><span class="pill-icon">✏️</span> Fill blanks</span>
+        <span class="pill"><span class="pill-icon">⚡</span> Score</span>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-num">80</div><div class="stat-label">Idioms</div></div>
+      <div class="stat"><div class="stat-num">400</div><div class="stat-label">Questions</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">Game modes</div></div>
+    </div>
+
+    <div class="config">
+      <div class="config-head">
+        <div class="config-dot"></div>
+        <div class="config-title">Session setup</div>
+      </div>
+      <p class="config-desc">Pick how many idioms to learn in this session.</p>
+      <div class="config-label">Idioms per session</div>
+      <div class="count-row">
+        <div class="count-pills" id="countPills">
+          <button class="count-pill" data-n="5">5</button>
+          <button class="count-pill active" data-n="7">7</button>
+          <button class="count-pill" data-n="10">10</button>
+          <button class="count-pill" data-n="12">12</button>
+        </div>
+        <div class="slider-row">
+          <span class="slider-label">Range:</span>
+          <input type="range" class="slider" min="3" max="15" value="7" step="1" id="rangeSlider">
+        </div>
+      </div>
+    </div>
+
+    <div class="enter-section">
+      <button class="btn-primary full" id="enterBtn">☕ Enter the Café</button>
+      <p class="enter-sub" id="enterSub">7 random idioms · ~5 min session</p>
+    </div>
+  </div>
+
+  <!-- ===== MENU ===== -->
+  <div id="menuScreen" class="screen">
+    <div class="screen-topbar">
+      <button class="back-btn" data-goto="landingScreen">←</button>
+      <span class="screen-topbar-title">Today's menu</span>
+      <span></span>
+    </div>
+    <div class="screen-inner">
+      <div class="screen-hero-sm">
+        <p class="screen-hero-title">Today's Menu</p>
+        <p class="screen-hero-desc">Here are the idioms you will learn in this session.</p>
+      </div>
+      <div id="menuList" class="menu-list"></div>
+      <button class="btn-primary full" id="startLearn">Start learning →</button>
+    </div>
+  </div>
+
+  <!-- ===== LEARN: FLASHCARDS ===== -->
+  <div id="learnScreen" class="screen">
+    <div class="screen-topbar">
+      <button class="back-btn" data-goto="menuScreen">←</button>
+      <span class="screen-topbar-title">Learn</span>
+      <span class="topbar-counter" id="cardCounter">1 / 7</span>
+    </div>
+    <div class="screen-inner center-col">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="learnProgress"></div></div>
+      <div class="card-container">
+        <div class="flashcard" id="flashcard">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <p class="card-front-name" id="cardFrontName"></p>
+              <p class="card-hint">tap to see meaning</p>
+            </div>
+            <div class="card-face card-back">
+              <p class="card-back-label">Meaning</p>
+              <p class="card-back-meaning" id="cardBackMeaning"></p>
+              <p class="card-back-example" id="cardBackExample"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-nav">
+        <button class="btn-ghost" id="prevCard">← Back</button>
+        <button class="btn-primary" id="nextCard">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MCQ ===== -->
+  <div id="mcqScreen" class="screen">
+    <div class="screen-topbar">
+      <span class="screen-topbar-title">MCQ quiz</span>
+      <span class="score-chip" id="mcqScoreChip">0</span>
+    </div>
+    <div class="screen-inner">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="mcqProgress"></div></div>
+      <p class="q-counter" id="mcqCounter">Question 1 of 14</p>
+      <div id="mcqBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== FILL IN THE BLANKS ===== -->
+  <div id="fitbScreen" class="screen">
+    <div class="screen-topbar">
+      <span class="screen-topbar-title">Fill in the blanks</span>
+      <span class="score-chip" id="fitbScoreChip">0</span>
+    </div>
+    <div class="screen-inner">
+      <div class="progress-bar-wrap"><div class="progress-bar" id="fitbProgress"></div></div>
+      <p class="q-counter" id="fitbCounter">Question 1 of 14</p>
+      <div id="fitbBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== FINAL SCORE ===== -->
+  <div id="finalScreen" class="screen">
+    <div class="screen-topbar">
+      <span class="screen-topbar-title">Results</span>
+      <span></span>
+    </div>
+    <div class="screen-inner center-col">
+      <div id="finalBody"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
