@@ -1,0 +1,13 @@
+{
+  "name": "idiom-cafe",
+  "version": "1.0.0",
+  "description": "Idiom Café - Master 80 everyday idioms through flashcards, quizzes, and fill-in-the-blank challenges. A fresh menu every session.",
+  "main": "app.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

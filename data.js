@@ -81,8 +81,6 @@ const IDIOMS = [
   { id:80, name:"Wrap Your Head Around", meaning:"Understand something complicated", example:"I still cannot wrap my head around quantum physics." }
 ];
 
-// 5 questions per idiom: 3 MCQ + 2 Fill-in-the-Blank (presented as multiple choice for mobile)
-// All content is G4 appropriate, G6 grammar
 const QUESTIONS = {
   1: [
     { type:"mcq", q:"Anya finished her art project in ten minutes and said it was simple. Which idiom fits?", opts:["Piece of Cake","Hit the Books","Bite the Bullet","Burn the Midnight Oil"], ans:0 },
@@ -331,317 +329,317 @@ const QUESTIONS = {
   ],
   36: [
     { type:"mcq", q:"Sahil told his sister that the dog ate her sandwich, but he was only joking. Which idiom fits?", opts:["Pull Someone's Leg","Spill the Beans","Let the Cat Out of the Bag","Bark Up the Wrong Tree"], ans:0 },
-    { type:"mcq", q:"What does 'Pull Someone's Leg' mean?", opts:["Joke with someone or tease them","Trip someone","Help someone walk","Drag someone along"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Pull Someone's Leg'?", opts:["A girl tells her friend there is a test tomorrow as a joke","A boy trips over a rock","A student helps carry boxes","A teacher ties a knot"], ans:0 },
-    { type:"fitb", q:"Relax — I am just ___! There is no spider on your head.", opts:["pulling your leg","spilling the beans","burning bridges","hitting the books"], ans:0 },
-    { type:"fitb", q:"He loves ___ — you can never tell when he is being serious.", opts:["pulling people's legs","biting the bullet","breaking the ice","going the extra mile"], ans:0 }
+    { type:"mcq", q:"What does 'Pull Someone's Leg' mean?", opts:["Joke with someone or tease them","Trip someone","Walk slowly","Carry something heavy"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Pull Someone's Leg'?", opts:["A boy pretends he lost his homework to tease his friend","A girl helps her friend up","A student walks in line","A teacher speaks seriously"], ans:0 },
+    { type:"fitb", q:"I am only ___ — I did not actually lose your bag!", opts:["pulling your leg","burning the midnight oil","biting the bullet","breaking the ice"], ans:0 },
+    { type:"fitb", q:"Stop ___! You know I didn't forget your birthday.", opts:["pulling my leg","beating around the bush","burning bridges","adding fuel to the fire"], ans:0 }
   ],
   37: [
-    { type:"mcq", q:"The two team captains could not agree on the batting order. Which idiom fits?", opts:["See Eye to Eye","Kill Two Birds with One Stone","Hit the Nail on the Head","Read Between the Lines"], ans:0 },
-    { type:"mcq", q:"What does 'See Eye to Eye' mean?", opts:["Agree with someone","Stare at someone","Have good eyesight","Stand close together"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'See Eye to Eye'?", opts:["Two friends disagree on which film to watch","Two students look through a microscope","A boy and his dog make eye contact","A girl reads a sign across the road"], ans:0 },
-    { type:"fitb", q:"My brother and I do not ___ on what game to play.", opts:["see eye to eye","burn the midnight oil","hit the books","call it a day"], ans:0 },
-    { type:"fitb", q:"The partners finally ___ after a long discussion.", opts:["saw eye to eye","burned bridges","jumped the gun","threw in the towel"], ans:0 }
+    { type:"mcq", q:"Anil and his teammate disagreed on the game strategy. Which idiom fits?", opts:["See Eye to Eye","On the Same Page","In Hot Water","On Cloud Nine"], ans:0 },
+    { type:"mcq", q:"What does 'See Eye to Eye' mean?", opts:["Agree with someone","Look at someone closely","Wear glasses","Stand face to face"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'See Eye to Eye'?", opts:["A student and a teacher agree on the project topic","A boy looks in a mirror","A girl walks towards her friend","A teacher talks to the whole class"], ans:0 },
+    { type:"fitb", q:"We do not ___ on which game to play, so we chose both.", opts:["see eye to eye","break the ice","hit the nail on the head","call it a day"], ans:0 },
+    { type:"fitb", q:"They finally started to ___ after talking through their differences.", opts:["see eye to eye","burn the midnight oil","jump the gun","throw in the towel"], ans:0 }
   ],
   38: [
-    { type:"mcq", q:"Asha had exciting news to share, but Ravi announced his news first and got all the attention. Which idiom fits?", opts:["Steal Someone's Thunder","Rain on Someone's Parade","Break the Ice","Ring a Bell"], ans:0 },
-    { type:"mcq", q:"What does 'Steal Someone's Thunder' mean?", opts:["Take credit or attention from someone else","Cause a storm","Make loud noises","Copy homework"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Steal Someone's Thunder'?", opts:["A boy shares the same idea just before his classmate was about to present it","A girl claps during a thunderstorm","A student plugs in a speaker","A teacher turns off the lights"], ans:0 },
-    { type:"fitb", q:"I was about to announce my prize, but she ___ by sharing hers first.", opts:["stole my thunder","broke the ice","hit the books","burned the midnight oil"], ans:0 },
-    { type:"fitb", q:"Do not ___ — let her share her good news first.", opts:["steal her thunder","rock the boat","throw in the towel","sit on the fence"], ans:0 }
+    { type:"mcq", q:"Zara planned to announce her win, but Mira told everyone before her, taking her credit. Which idiom fits?", opts:["Steal Someone's Thunder","Bark Up the Wrong Tree","Pull Someone's Leg","Break the Ice"], ans:0 },
+    { type:"mcq", q:"What does 'Steal Someone's Thunder' mean?", opts:["Take credit or attention from someone else","Make a loud noise","Win a race","Talk too much"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Steal Someone's Thunder'?", opts:["A girl announces a surprise in front of her friend who planned it","A boy speaks at a meeting","A student answers a teacher's question","A teacher praises a pupil"], ans:0 },
+    { type:"fitb", q:"She ___ by telling everyone about the secret trip first.", opts:["stole my thunder","burned bridges","threw in the towel","jumped the gun"], ans:0 },
+    { type:"fitb", q:"I wanted to show my painting, but he ___ by showing his sculpture first.", opts:["stole my thunder","hit the nail on the head","missed the boat","cried over spilt milk"], ans:0 }
   ],
   39: [
-    { type:"mcq", q:"The broken chairs in class are a small part of a much bigger maintenance problem at school. Which idiom fits?", opts:["The Tip of the Iceberg","The Last Straw","The Elephant in the Room","A Blessing in Disguise"], ans:0 },
-    { type:"mcq", q:"What does 'The Tip of the Iceberg' mean?", opts:["A small part of a much bigger problem","A frozen lake","The top of a mountain","A cold day"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'The Tip of the Iceberg'?", opts:["A few missing books suggest the library has a bigger organisation issue","A boy touches an ice cube","A girl draws a picture of the Arctic","A student visits a glacier"], ans:0 },
-    { type:"fitb", q:"The late deliveries are just ___ — the whole supply chain has issues.", opts:["the tip of the iceberg","the last straw","a piece of cake","a penny for your thoughts"], ans:0 },
-    { type:"fitb", q:"These two complaints are only ___ — there are many more.", opts:["the tip of the iceberg","the ball in your court","the elephant in the room","the best of both worlds"], ans:0 }
+    { type:"mcq", q:"This little argument is just a small sign of a much bigger problem. Which idiom fits?", opts:["The Tip of the Iceberg","A Blessing in Disguise","The Last Straw","Back to Square One"], ans:0 },
+    { type:"mcq", q:"What does 'The Tip of the Iceberg' mean?", opts:["A small part of a much bigger problem","A cold place","A type of boat","A frozen mountain"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'The Tip of the Iceberg'?", opts:["A teacher notes one mistake in an essay that is full of errors","A boy sees a block of ice","A girl drinks water","A student reads about the North Pole"], ans:0 },
+    { type:"fitb", q:"Forgetting to bring your book is just ___ — your desk is a total mess too.", opts:["the tip of the iceberg","a piece of cake","a penny for your thoughts","a blessing in disguise"], ans:0 },
+    { type:"fitb", q:"That small error was only ___ — the whole system was broken.", opts:["the tip of the iceberg","the best of both worlds","every cloud has a silver lining","the elephant in the room"], ans:0 }
   ],
   40: [
-    { type:"mcq", q:"After failing the audition three times, Jay decided to stop trying. Which idiom fits?", opts:["Throw in the Towel","Bite the Bullet","Go the Extra Mile","Keep Your Chin Up"], ans:0 },
-    { type:"mcq", q:"What does 'Throw in the Towel' mean?", opts:["Give up","Clean up","Start again","Celebrate"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Throw in the Towel'?", opts:["A boy quits the chess club after losing every game","A girl finishes a difficult puzzle","A student scores the winning goal","A teacher starts a new lesson"], ans:0 },
-    { type:"fitb", q:"The puzzle was so hard that I almost ___.", opts:["threw in the towel","hit the nail on the head","broke the ice","jumped on the bandwagon"], ans:0 },
-    { type:"fitb", q:"Do not ___ now — you are so close to finishing!", opts:["throw in the towel","burn bridges","beat around the bush","spill the beans"], ans:0 }
+    { type:"mcq", q:"After losing for the third time in a row, Raj decided to quit the competition. Which idiom fits?", opts:["Throw in the Towel","Call It a Day","Hit the Books","Break the Ice"], ans:0 },
+    { type:"mcq", q:"What does 'Throw in the Towel' mean?", opts:["Give up","Clean up","Go to the gym","Start a fight"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Throw in the Towel'?", opts:["A student stops trying to solve a puzzle that is too hard","A boy drops his towel","A girl finishes her race","A teacher helps a student"], ans:0 },
+    { type:"fitb", q:"The experiment was too difficult, so we decided to ___.", opts:["throw in the towel","burn the midnight oil","break the ice","jump on the bandwagon"], ans:0 },
+    { type:"fitb", q:"She refused to ___ even when the task became very challenging.", opts:["throw in the towel","beat around the bush","bark up the wrong tree","add fuel to the fire"], ans:0 }
   ],
   41: [
-    { type:"mcq", q:"Meera searched the whole house for her glasses, and they were on her head the entire time. Which idiom fits?", opts:["Under Your Nose","Up in the Air","On Cloud Nine","Out of Hand"], ans:0 },
-    { type:"mcq", q:"What does 'Under Your Nose' mean?", opts:["Right in front of you but unnoticed","Very smelly","Hidden underground","Far away"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Under Your Nose'?", opts:["A boy looks everywhere for the remote, which is on the sofa next to him","A girl smells a flower","A student digs in the garden","A teacher hides a surprise"], ans:0 },
-    { type:"fitb", q:"The answer was right ___ the whole time — I just did not see it.", opts:["under my nose","up in the air","on cloud nine","in hot water"], ans:0 },
-    { type:"fitb", q:"My phone was ___ — sitting on the desk right in front of me!", opts:["under my nose","over the moon","on the fence","in the dark"], ans:0 }
+    { type:"mcq", q:"Arjun was looking for his keys for an hour, but they were right in front of him. Which idiom fits?", opts:["Under Your Nose","Up in the Air","In Hot Water","Once in a Blue Moon"], ans:0 },
+    { type:"mcq", q:"What does 'Under Your Nose' mean?", opts:["Right in front of you but unnoticed","Under your face","Smelling something","A small part of your face"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Under Your Nose'?", opts:["A girl finds her pen right on her desk after looking everywhere","A boy gets a cold","A student talks to his friend","A teacher checks a paper"], ans:0 },
+    { type:"fitb", q:"My phone was ___ the whole time I was searching for it!", opts:["under my nose","on cloud nine","in hot water","up in the air"], ans:0 },
+    { type:"fitb", q:"He missed the answer even though it was ___.", opts:["under his nose","a penny for his thoughts","a piece of cake","on the same page"], ans:0 }
   ],
   42: [
-    { type:"mcq", q:"Nobody knows yet whether the school trip will happen this year. Which idiom fits?", opts:["Up in the Air","Under the Weather","On Cloud Nine","In Hot Water"], ans:0 },
-    { type:"mcq", q:"What does 'Up in the Air' mean?", opts:["Uncertain or not decided yet","Flying in a plane","Very high","Feeling dizzy"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Up in the Air'?", opts:["The family has not decided where to go for vacation","A kite flies above the park","A boy throws a ball high","A girl climbs to the top of a slide"], ans:0 },
-    { type:"fitb", q:"The venue for the school fair is still ___.", opts:["up in the air","under the weather","on cloud nine","once in a blue moon"], ans:0 },
-    { type:"fitb", q:"Our weekend plans are completely ___ — nothing is confirmed.", opts:["up in the air","in hot water","back to square one","down in flames"], ans:0 }
+    { type:"mcq", q:"The family holiday plans are not yet decided. Which idiom fits?", opts:["Up in the Air","On Cloud Nine","In Hot Water","Under the Weather"], ans:0 },
+    { type:"mcq", q:"What does 'Up in the Air' mean?", opts:["Uncertain or not decided yet","Flying","Scared of heights","Waiting for a plane"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Up in the Air'?", opts:["A group of friends cannot decide where to meet","A girl is excited for her trip","A boy is on an aeroplane","A teacher hands out forms"], ans:0 },
+    { type:"fitb", q:"Our plans for the party are still ___.", opts:["up in the air","on cloud nine","in hot water","under the weather"], ans:0 },
+    { type:"fitb", q:"Everything for the event is ___ because we do not have a budget yet.", opts:["up in the air","back to square one","out of hand","on the same page"], ans:0 }
   ],
   43: [
-    { type:"mcq", q:"Raj always hides other people's pencils as a prank. Today someone hid his pencil case, and he did not like it. Which idiom fits?", opts:["A Taste of Your Own Medicine","Pull Someone's Leg","The Last Straw","A Blessing in Disguise"], ans:0 },
-    { type:"mcq", q:"What does 'A Taste of Your Own Medicine' mean?", opts:["Experience the same bad treatment you give others","Try a new flavour","Visit the doctor","Take a vitamin"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'A Taste of Your Own Medicine'?", opts:["A boy who always teases others gets teased himself","A girl takes cough syrup","A student shares her lunch","A teacher gives out candy"], ans:0 },
-    { type:"fitb", q:"He always copies homework, so when someone copied his, it was ___.", opts:["a taste of his own medicine","a piece of cake","the tip of the iceberg","the last straw"], ans:0 },
-    { type:"fitb", q:"She finally got ___ when her own prank was played back on her.", opts:["a taste of her own medicine","a blessing in disguise","a penny for her thoughts","the ball in her court"], ans:0 }
+    { type:"mcq", q:"He kept interrupting his friend, so his friend interrupted him back to show him how annoying it is. Which idiom fits?", opts:["A Taste of Your Own Medicine","Actions Speak Louder Than Words","Better Late Than Never","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'A Taste of Your Own Medicine' mean?", opts:["Experience the same bad treatment you give others","Go to the doctor","Take medicine","Get sick"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'A Taste of Your Own Medicine'?", opts:["A bully gets teased back and finally understands how it feels","A boy gives his friend candy","A girl helps her sister","A teacher explains a rule"], ans:0 },
+    { type:"fitb", q:"He keeps making fun of others, so I gave him ___.", opts:["a taste of his own medicine","a penny for his thoughts","a piece of cake","every cloud has a silver lining"], ans:0 },
+    { type:"fitb", q:"After she was late, she got a ___ when everyone else showed up late too.", opts:["taste of her own medicine","blessing in disguise","time flies","bit of a break"], ans:0 }
   ],
   44: [
-    { type:"mcq", q:"Grandma would drop everything and rush over to help if you called her. Which idiom fits?", opts:["At the Drop of a Hat","Once in a Blue Moon","On Cloud Nine","Under the Weather"], ans:0 },
-    { type:"mcq", q:"What does 'At the Drop of a Hat' mean?", opts:["Without hesitation, instantly","While wearing a hat","Very slowly","After thinking for a long time"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'At the Drop of a Hat'?", opts:["A friend immediately agrees to help you move furniture","A girl takes hours to pick an outfit","A boy sleeps through his alarm","A student waits a week to reply to a message"], ans:0 },
-    { type:"fitb", q:"She would lend you her notes ___.", opts:["at the drop of a hat","once in a blue moon","when pigs fly","back to square one"], ans:0 },
-    { type:"fitb", q:"He is always ready to play cricket — he would join ___.", opts:["at the drop of a hat","under the weather","up in the air","in hot water"], ans:0 }
+    { type:"mcq", q:"Sana always helps anyone who needs it immediately. Which idiom fits?", opts:["At the Drop of a Hat","Once in a Blue Moon","Time Flies","Every Cloud Has a Silver Lining"], ans:0 },
+    { type:"mcq", q:"What does 'At the Drop of a Hat' mean?", opts:["Without hesitation, instantly","Wear a hat","Wait a long time","Take your time"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'At the Drop of a Hat'?", opts:["A student stops what he is doing to help his friend immediately","A girl buys a hat","A boy waits for a bus","A teacher starts the class slowly"], ans:0 },
+    { type:"fitb", q:"She would help out ___ if you ask her nicely.", opts:["at the drop of a hat","once in a blue moon","better late than never","under the weather"], ans:0 },
+    { type:"fitb", q:"He is ready to start painting ___.", opts:["at the drop of a hat","back to square one","in hot water","on the same page"], ans:0 }
   ],
   45: [
-    { type:"mcq", q:"The assignment was due last week, but the teacher still accepted it late. Which idiom fits?", opts:["Better Late Than Never","No Pain, No Gain","Time Flies","Once in a Blue Moon"], ans:0 },
-    { type:"mcq", q:"What does 'Better Late Than Never' mean?", opts:["Doing something late is better than not doing it at all","Being early is bad","Lateness is always fine","Never be late"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Better Late Than Never'?", opts:["A girl returns a library book two weeks past the due date","A boy arrives early for practice","A student skips class entirely","A teacher starts the lesson on time"], ans:0 },
-    { type:"fitb", q:"You finally cleaned your room! Well, ___.", opts:["better late than never","no pain, no gain","once in a blue moon","time flies"], ans:0 },
-    { type:"fitb", q:"He apologised a week later — but ___.", opts:["better late than never","actions speak louder than words","the ball is in your court","the last straw"], ans:0 }
+    { type:"mcq", q:"Rohan finally submitted his project two days late, but his teacher was glad it was done. Which idiom fits?", opts:["Better Late Than Never","Actions Speak Louder Than Words","A Penny for Your Thoughts","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'Better Late Than Never' mean?", opts:["Doing something late is better than not doing it at all","Always be late","Being on time is bad","Never do your work"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Better Late Than Never'?", opts:["A student finally turns in his homework after the deadline","A boy is on time","A girl finishes early","A teacher assigns a test"], ans:0 },
+    { type:"fitb", q:"You finally fixed the leak — ___.", opts:["better late than never","time flies","the ball is in your court","every cloud has a silver lining"], ans:0 },
+    { type:"fitb", q:"I know I should have called earlier, but ___.", opts:["better late than never","actions speak louder than words","a picture is worth a thousand words","two heads are better than one"], ans:0 }
   ],
   46: [
-    { type:"mcq", q:"The builders used cheap materials to save money, and the roof started leaking. Which idiom fits?", opts:["Cut Corners","Go the Extra Mile","Hit the Nail on the Head","Call It a Day"], ans:0 },
-    { type:"mcq", q:"What does 'Cut Corners' mean?", opts:["Do something in the easiest or cheapest way, skipping quality","Use scissors carefully","Take a shortcut on a road","Trim the edges of paper"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Cut Corners'?", opts:["A student copies answers from the back of the textbook instead of solving the problems","A girl neatly folds her uniform","A boy follows the recipe exactly","A teacher marks all the papers carefully"], ans:0 },
-    { type:"fitb", q:"If you ___ on the project, it will not turn out well.", opts:["cut corners","burn the midnight oil","break the ice","go the extra mile"], ans:0 },
-    { type:"fitb", q:"The toy broke quickly because the company ___.", opts:["cut corners","went the extra mile","hit the books","burned bridges"], ans:0 }
+    { type:"mcq", q:"The builders tried to finish quickly by using weak materials. Which idiom fits?", opts:["Cut Corners","Go the Extra Mile","No Pain, No Gain","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Cut Corners' mean?", opts:["Do something in the easiest or cheapest way, skipping quality","Use scissors","Turn at a corner","Save time properly"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Cut Corners'?", opts:["A student rushes his art project and skips the details","A boy practises hard","A girl paints carefully","A teacher checks the work thoroughly"], ans:0 },
+    { type:"fitb", q:"If you ___ on your project, the results will not be very good.", opts:["cut corners","go the extra mile","kill two birds with one stone","throw in the towel"], ans:0 },
+    { type:"fitb", q:"He always ___ by copying work instead of doing it himself.", opts:["cuts corners","goes the extra mile","burns the midnight oil","breaks the ice"], ans:0 }
   ],
   47: [
-    { type:"mcq", q:"The plain-looking restaurant turned out to have the best food in town. Which idiom fits?", opts:["Don't Judge a Book by Its Cover","The Tip of the Iceberg","A Blessing in Disguise","Read Between the Lines"], ans:0 },
-    { type:"mcq", q:"What does 'Don't Judge a Book by Its Cover' mean?", opts:["Do not judge by appearance alone","Always read the first page","Choose books by their cover","Appearances are always correct"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Don't Judge a Book by Its Cover'?", opts:["A shy new student turns out to be an amazing singer","A girl picks a colourful notebook","A boy reads the blurb of a novel","A teacher decorates the classroom"], ans:0 },
-    { type:"fitb", q:"He looked unfriendly, but he was very kind — ___.", opts:["don't judge a book by its cover","the tip of the iceberg","a taste of your own medicine","read between the lines"], ans:0 },
-    { type:"fitb", q:"The old shop looked run-down, but ___ — the cakes were amazing.", opts:["don't judge a book by its cover","actions speak louder than words","every cloud has a silver lining","no pain, no gain"], ans:0 }
+    { type:"mcq", q:"The student looked disorganised, but he was actually a genius. Which idiom fits?", opts:["Don't Judge a Book by Its Cover","Actions Speak Louder Than Words","A Penny for Your Thoughts","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'Don't Judge a Book by Its Cover' mean?", opts:["Do not judge by appearance alone","Books are boring","Read the book completely","Covers are not important"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Don't Judge a Book by Its Cover'?", opts:["A quiet girl wins the big debate","A boy reads a book","A girl buys a book","A teacher recommends a book"], ans:0 },
+    { type:"fitb", q:"That small car looks slow, but it is fast — ___.", opts:["don't judge a book by its cover","time flies","the ball is in your court","every cloud has a silver lining"], ans:0 },
+    { type:"fitb", q:"She seemed shy, but she became a great leader — ___.", opts:["don't judge a book by its cover","actions speak louder than words","a picture is worth a thousand words","two heads are better than one"], ans:0 }
   ],
   48: [
-    { type:"mcq", q:"The homework took only two minutes — it was really simple. Which idiom fits?", opts:["Easy as Pie","Once in a Blue Moon","On Cloud Nine","Cost an Arm and a Leg"], ans:0 },
-    { type:"mcq", q:"What does 'Easy as Pie' mean?", opts:["Very easy to do","Delicious","Difficult to bake","Sweet and soft"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Easy as Pie'?", opts:["A girl finishes a jigsaw puzzle in five minutes","A boy struggles with a maths problem","A student burns her toast","A teacher explains a tricky concept"], ans:0 },
-    { type:"fitb", q:"Setting up the new game on my computer was ___.", opts:["easy as pie","hard as nails","once in a blue moon","up in the air"], ans:0 },
-    { type:"fitb", q:"Riding a bicycle is ___ once you learn how.", opts:["easy as pie","the last straw","in hot water","under the weather"], ans:0 }
+    { type:"mcq", q:"Setting up the tent was very simple for them. Which idiom fits?", opts:["Easy as Pie","Piece of Cake","Once in a Blue Moon","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'Easy as Pie' mean?", opts:["Very easy to do","Very delicious","Very small","Very quick"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Easy as Pie'?", opts:["A boy follows the simple instructions to make a sandwich","A girl bakes a complex cake","A student studies for hours","A teacher gives a hard test"], ans:0 },
+    { type:"fitb", q:"Fixing the computer was ___ — I just had to restart it.", opts:["easy as pie","a piece of cake","once in a blue moon","under the weather"], ans:0 },
+    { type:"fitb", q:"I thought the homework would be hard, but it was ___.", opts:["easy as pie","back to square one","in hot water","on the same page"], ans:0 }
   ],
   49: [
-    { type:"mcq", q:"Aditi was ready to perform on stage, but at the last moment she felt too nervous and wanted to back out. Which idiom fits?", opts:["Get Cold Feet","Bite the Bullet","Hit the Books","Call It a Day"], ans:0 },
-    { type:"mcq", q:"What does 'Get Cold Feet' mean?", opts:["Become too nervous to do something","Feel cold in winter","Run barefoot","Freeze in place"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Get Cold Feet'?", opts:["A boy decides not to jump off the diving board at the last second","A girl puts on warm socks","A student walks on cold tiles","A teacher opens a window in winter"], ans:0 },
-    { type:"fitb", q:"He was about to ask the teacher a question but ___.", opts:["got cold feet","burned the midnight oil","hit the nail on the head","broke the ice"], ans:0 },
-    { type:"fitb", q:"She ___ right before the singing competition and almost did not perform.", opts:["got cold feet","threw in the towel","jumped on the bandwagon","went the extra mile"], ans:0 }
+    { type:"mcq", q:"He was going to give a speech, but he got very nervous and backed out. Which idiom fits?", opts:["Get Cold Feet","On Cloud Nine","In Hot Water","Up in the Air"], ans:0 },
+    { type:"mcq", q:"What does 'Get Cold Feet' mean?", opts:["Become too nervous to do something","Need warm socks","Have cold toes","Feel lazy"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Get Cold Feet'?", opts:["A girl refuses to go on stage because she is shy","A boy feels cold in the winter","A student sits in class","A teacher speaks clearly"], ans:0 },
+    { type:"fitb", q:"You cannot ___ just before the race starts!", opts:["get cold feet","get out of hand","be on cloud nine","be on the same page"], ans:0 },
+    { type:"fitb", q:"She wanted to join the club, but she ___ and decided not to.", opts:["got cold feet","threw in the towel","burned bridges","called it a day"], ans:0 }
   ],
   50: [
-    { type:"mcq", q:"The team's plan to win the quiz failed badly — they scored zero. Which idiom fits?", opts:["Go Down in Flames","Go the Extra Mile","Once in a Blue Moon","On Cloud Nine"], ans:0 },
-    { type:"mcq", q:"What does 'Go Down in Flames' mean?", opts:["Fail spectacularly","Fly a plane","Catch fire","Win a battle"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Go Down in Flames'?", opts:["A carefully planned presentation goes completely wrong","A boy roasts marshmallows over a fire","A girl lights birthday candles","A teacher shows a science experiment with fire"], ans:0 },
-    { type:"fitb", q:"Their attempt at a flash mob ___ when nobody showed up.", opts:["went down in flames","broke the ice","hit the books","killed two birds with one stone"], ans:0 },
-    { type:"fitb", q:"The recipe ___ — the cake came out completely flat.", opts:["went down in flames","was a piece of cake","cost an arm and a leg","rang a bell"], ans:0 }
+    { type:"mcq", q:"The team's plan failed in a very dramatic way. Which idiom fits?", opts:["Go Down in Flames","On Cloud Nine","A Blessing in Disguise","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Go Down in Flames' mean?", opts:["Fail spectacularly","A building is burning","An aeroplane crashes","Cooking fails"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Go Down in Flames'?", opts:["A project fails despite much effort","A boy plays with fire","A girl puts out a candle","A student tries his best"], ans:0 },
+    { type:"fitb", q:"Their business idea ___ because of poor planning.", opts:["went down in flames","was a piece of cake","was on cloud nine","was in the clear"], ans:0 },
+    { type:"fitb", q:"The show ___ when the lights went out during the performance.", opts:["went down in flames","went the extra mile","got out of hand","was on the same page"], ans:0 }
   ],
   51: [
-    { type:"mcq", q:"The cross-country race was exhausting, but the coach told everyone to keep going. Which idiom fits?", opts:["Hang in There","Throw in the Towel","Call It a Day","Jump the Gun"], ans:0 },
-    { type:"mcq", q:"What does 'Hang in There' mean?", opts:["Keep going and do not give up","Hang from a bar","Wait outside","Take a break"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Hang in There'?", opts:["A friend encourages you to finish the last question of a hard test","A boy hangs his coat on a hook","A girl swings on monkey bars","A student hangs up a poster"], ans:0 },
-    { type:"fitb", q:"I know the work is difficult, but ___ — you are almost done.", opts:["hang in there","throw in the towel","call it a day","jump the gun"], ans:0 },
-    { type:"fitb", q:"___ — only two more laps to go!", opts:["Hang in there","Burn bridges","Beat around the bush","Spill the beans"], ans:0 }
+    { type:"mcq", q:"The last mile of the race is hard, but keep going! Which idiom fits?", opts:["Hang in There","Throw in the Towel","Burn Bridges","Go Down in Flames"], ans:0 },
+    { type:"mcq", q:"What does 'Hang in There' mean?", opts:["Keep going and do not give up","Hold on to something","Wait outside","Stay in the air"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Hang in There'?", opts:["A friend tells you to stay positive during a hard task","A boy hangs from a bar","A girl waits in line","A teacher gives homework"], ans:0 },
+    { type:"fitb", q:"I know it is difficult, but ___ — you are almost finished!", opts:["hang in there","throw in the towel","burn bridges","jump the gun"], ans:0 },
+    { type:"fitb", q:"She was tired of studying, but her friend told her to ___.", opts:["hang in there","add fuel to the fire","cry over spilt milk","sit on the fence"], ans:0 }
   ],
   52: [
-    { type:"mcq", q:"Both Anya and Kabir were responsible for the argument, not just one of them. Which idiom fits?", opts:["It Takes Two to Tango","See Eye to Eye","Pull Someone's Leg","The Ball Is in Your Court"], ans:0 },
-    { type:"mcq", q:"What does 'It Takes Two to Tango' mean?", opts:["Both people are responsible, not just one","You need a dance partner","Two is better than one","Dancing is difficult"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'It Takes Two to Tango'?", opts:["Two students blame each other for a group project that went wrong","A boy dances alone in his room","A girl teaches her friend a dance move","A teacher plays music during class"], ans:0 },
-    { type:"fitb", q:"You are both at fault — ___.", opts:["it takes two to tango","two heads are better than one","a picture is worth a thousand words","time flies"], ans:0 },
-    { type:"fitb", q:"Do not only blame her — remember, ___.", opts:["it takes two to tango","the ball is in your court","actions speak louder than words","every cloud has a silver lining"], ans:0 }
+    { type:"mcq", q:"The disagreement wasn't just his fault; they were both involved. Which idiom fits?", opts:["It Takes Two to Tango","Go the Extra Mile","No Pain, No Gain","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'It Takes Two to Tango' mean?", opts:["Both people are responsible, not just one","Two people are dancing","People like dancing","Arguments are bad"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'It Takes Two to Tango'?", opts:["Two students are both responsible for the argument in class","A boy dances with his sister","A girl listens to music","A teacher leads the class"], ans:0 },
+    { type:"fitb", q:"Do not blame just him for the fight — ___.", opts:["it takes two to tango","let the cat out of the bag","burn the midnight oil","add fuel to the fire"], ans:0 },
+    { type:"fitb", q:"We both failed to get the forms in on time — ___.", opts:["it takes two to tango","beating around the bush","barking up the wrong tree","burning bridges"], ans:0 }
   ],
   53: [
-    { type:"mcq", q:"The teacher had not finished explaining the rules, but Riya already started the activity. Which idiom fits?", opts:["Jump the Gun","Miss the Boat","Hit the Books","Break the Ice"], ans:0 },
-    { type:"mcq", q:"What does 'Jump the Gun' mean?", opts:["Act too soon, before the right time","Fire a weapon","Win a race","Be very excited"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Jump the Gun'?", opts:["A boy starts running before the whistle blows","A girl waits patiently for her turn","A student reads the instructions carefully","A teacher counts down from three"], ans:0 },
-    { type:"fitb", q:"Do not ___ — wait until the results are officially announced.", opts:["jump the gun","hit the books","throw in the towel","burn the midnight oil"], ans:0 },
-    { type:"fitb", q:"She ___ by sending the invitations before the date was confirmed.", opts:["jumped the gun","missed the boat","called it a day","burned bridges"], ans:0 }
+    { type:"mcq", q:"She announced the winner before the final votes were counted. Which idiom fits?", opts:["Jump the Gun","Miss the Boat","Call It a Day","Hit the Books"], ans:0 },
+    { type:"mcq", q:"What does 'Jump the Gun' mean?", opts:["Act too soon, before the right time","Run very fast","Start a race","Be very loud"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Jump the Gun'?", opts:["A boy starts eating before everyone is served","A girl practises for a race","A student finishes homework","A teacher starts the lesson"], ans:0 },
+    { type:"fitb", q:"Do not ___ — wait until we have all the information.", opts:["jump the gun","burn the midnight oil","break the ice","rock the boat"], ans:0 },
+    { type:"fitb", q:"I ___ by celebrating before the results were actually posted.", opts:["jumped the gun","threw in the towel","burned bridges","called it a day"], ans:0 }
   ],
   54: [
-    { type:"mcq", q:"Mum asked me to watch the baby carefully while she stepped out. Which idiom fits?", opts:["Keep an Eye On","Read Between the Lines","See Eye to Eye","Ring a Bell"], ans:0 },
-    { type:"mcq", q:"What does 'Keep an Eye On' mean?", opts:["Watch carefully","Close one eye","Wear glasses","Look away"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Keep an Eye On'?", opts:["A boy watches his younger sister at the park","A girl draws a picture of an eye","A student reads with a magnifying glass","A teacher turns off the lights"], ans:0 },
-    { type:"fitb", q:"Can you ___ the cake in the oven? It might burn.", opts:["keep an eye on","read between the lines","see eye to eye","ring a bell"], ans:0 },
-    { type:"fitb", q:"The teacher asked her to ___ the class while he stepped out.", opts:["keep an eye on","pull the leg of","jump the gun on","throw in the towel on"], ans:0 }
+    { type:"mcq", q:"Watch the soup carefully so it does not overflow. Which idiom fits?", opts:["Keep an Eye On","Throw in the Towel","Burn Bridges","Go Down in Flames"], ans:0 },
+    { type:"mcq", q:"What does 'Keep an Eye On' mean?", opts:["Watch carefully","Use your eyes to see","Take a picture","Look away"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Keep an Eye On'?", opts:["A student asks his friend to watch his bag while he is away","A boy looks at a bird","A girl closes her eyes","A teacher reads a book"], ans:0 },
+    { type:"fitb", q:"Can you ___ my little brother while I get the mail?", opts:["keep an eye on","throw in the towel","burn bridges","jump the gun"], ans:0 },
+    { type:"fitb", q:"Please ___ the oven — it might burn.", opts:["keep an eye on","add fuel to the fire","cry over spilt milk","sit on the fence"], ans:0 }
   ],
   55: [
-    { type:"mcq", q:"The police searched every house, shop, and alley to find the missing cat. Which idiom fits?", opts:["Leave No Stone Unturned","Under Your Nose","The Tip of the Iceberg","Bark Up the Wrong Tree"], ans:0 },
-    { type:"mcq", q:"What does 'Leave No Stone Unturned' mean?", opts:["Search everywhere and try everything","Move all the rocks","Build a stone wall","Leave a mess"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Leave No Stone Unturned'?", opts:["A student checks every cupboard looking for the missing trophy","A boy skips the hard questions on a test","A girl gives up on a puzzle","A teacher only reads half the essays"], ans:0 },
-    { type:"fitb", q:"We will ___ to find your lost ring.", opts:["leave no stone unturned","throw in the towel","sit on the fence","call it a day"], ans:0 },
-    { type:"fitb", q:"The detective promised to ___ in the investigation.", opts:["leave no stone unturned","beat around the bush","bark up the wrong tree","burn bridges"], ans:0 }
+    { type:"mcq", q:"The detective looked everywhere to find the hidden clue. Which idiom fits?", opts:["Leave No Stone Unturned","Break the Ice","Piece of Cake","Hit the Nail on the Head"], ans:0 },
+    { type:"mcq", q:"What does 'Leave No Stone Unturned' mean?", opts:["Search everywhere and try everything","Break stones","Clean a field","Look in the garden"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Leave No Stone Unturned'?", opts:["A girl searches her whole room to find her lost earring","A boy plays in the sandbox","A student clears his desk","A teacher organises the classroom"], ans:0 },
+    { type:"fitb", q:"We will ___ to find out what happened to our project.", opts:["leave no stone unturned","burn the midnight oil","hit the books","go the extra mile"], ans:0 },
+    { type:"fitb", q:"I have ___ looking for my keys.", opts:["left no stone unturned","broken the ice","hit the nail on the head","called it a day"], ans:0 }
   ],
   56: [
-    { type:"mcq", q:"Instead of explaining every little detail, Priya just told the main point. Which idiom fits?", opts:["Make a Long Story Short","Beat Around the Bush","Read Between the Lines","Add Fuel to the Fire"], ans:0 },
-    { type:"mcq", q:"What does 'Make a Long Story Short' mean?", opts:["Get to the point quickly","Write a short essay","Tell a bedtime story","Read a summary"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Make a Long Story Short'?", opts:["A boy skips the details and tells his mum the main news","A girl writes a ten-page report","A student reads a novel cover to cover","A teacher tells a long story"], ans:0 },
-    { type:"fitb", q:"To ___, we missed the bus and had to walk.", opts:["make a long story short","beat around the bush","burn the midnight oil","hit the books"], ans:0 },
-    { type:"fitb", q:"I could explain everything, but to ___, we won!", opts:["make a long story short","add fuel to the fire","let the cat out of the bag","rock the boat"], ans:0 }
+    { type:"mcq", q:"Just tell me what happened in brief, don't tell me every detail. Which idiom fits?", opts:["Make a Long Story Short","Hit the Books","Call It a Day","Sit on the Fence"], ans:0 },
+    { type:"mcq", q:"What does 'Make a Long Story Short' mean?", opts:["Get to the point quickly","Speak quietly","Speak slowly","Tell a very long story"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Make a Long Story Short'?", opts:["A girl explains the main point of her adventure without listing every step","A boy tells a very detailed story","A student reads a book","A teacher gives a long lecture"], ans:0 },
+    { type:"fitb", q:"___: we were late because of a flat tyre.", opts:["To make a long story short","To jump the gun","To throw in the towel","To break the ice"], ans:0 },
+    { type:"fitb", q:"He kept rambling, so I told him, 'Please ___.'", opts:["make a long story short","go the extra mile","burn the midnight oil","break the ice"], ans:0 }
   ],
   57: [
-    { type:"mcq", q:"Sahil does not enjoy watching horror movies at all. Which idiom fits?", opts:["Not My Cup of Tea","Under the Weather","Easy as Pie","On Cloud Nine"], ans:0 },
-    { type:"mcq", q:"What does 'Not My Cup of Tea' mean?", opts:["Not something I enjoy","I do not drink tea","I prefer coffee","I am not thirsty"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Not My Cup of Tea'?", opts:["A girl politely says she does not like board games","A boy orders tea at a café","A student finishes a cup of hot chocolate","A teacher brews some tea in the staffroom"], ans:0 },
-    { type:"fitb", q:"Hiking for hours in the rain is ___.", opts:["not my cup of tea","a piece of cake","easy as pie","the best of both worlds"], ans:0 },
-    { type:"fitb", q:"Classical music is lovely, but it is ___.", opts:["not my cup of tea","once in a blue moon","under the weather","on cloud nine"], ans:0 }
+    { type:"mcq", q:"I really do not like horror movies; they are not for me. Which idiom fits?", opts:["Not My Cup of Tea","On Cloud Nine","In Hot Water","Up in the Air"], ans:0 },
+    { type:"mcq", q:"What does 'Not My Cup of Tea' mean?", opts:["Not something I enjoy","I do not like tea","I only like coffee","It is too hot"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Not My Cup of Tea'?", opts:["A girl explains that she prefers sci-fi over scary movies","A boy drinks tea","A student prepares a drink","A teacher likes tea"], ans:0 },
+    { type:"fitb", q:"Classical music is ___ — I prefer pop music.", opts:["not my cup of tea","on cloud nine","in hot water","up in the air"], ans:0 },
+    { type:"fitb", q:"Hiking is ___ — I would rather stay at home.", opts:["not my cup of tea","back to square one","out of hand","on the same page"], ans:0 }
   ],
   58: [
-    { type:"mcq", q:"Before starting the group project, the teacher made sure all students understood the plan. Which idiom fits?", opts:["On the Same Page","See Eye to Eye","Break the Ice","The Ball Is in Your Court"], ans:0 },
-    { type:"mcq", q:"What does 'On the Same Page' mean?", opts:["In agreement, understanding each other","Reading the same book","Sitting next to each other","Writing in the same notebook"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'On the Same Page'?", opts:["A team discusses their strategy and agrees on the approach","Two students share a textbook","A girl reads the same novel as her friend","A teacher opens the book to page 12"], ans:0 },
-    { type:"fitb", q:"Let us make sure we are ___ before we start the experiment.", opts:["on the same page","on cloud nine","in hot water","under the weather"], ans:0 },
-    { type:"fitb", q:"The meeting helped get everyone ___.", opts:["on the same page","back to square one","out of hand","up in the air"], ans:0 }
+    { type:"mcq", q:"Let's ensure we both understand the plan the same way before starting. Which idiom fits?", opts:["On the Same Page","Jump on the Bandwagon","Break the Ice","Kill Two Birds with One Stone"], ans:0 },
+    { type:"mcq", q:"What does 'On the Same Page' mean?", opts:["In agreement, understanding each other","Reading the same book","Sitting together","Being quiet"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'On the Same Page'?", opts:["A group of students discusses the project to ensure they all know their tasks","A boy reads a book","A girl talks to her friend","A teacher writes on the page"], ans:0 },
+    { type:"fitb", q:"Before we start, let's make sure we are ___.", opts:["on the same page","burning the midnight oil","sitting on the fence","hitting the books"], ans:0 },
+    { type:"fitb", q:"We had a meeting to ensure everyone was ___.", opts:["on the same page","beating around the bush","barking up the wrong tree","burning bridges"], ans:0 }
   ],
   59: [
-    { type:"mcq", q:"We have no fixed plan for Saturday — we will just see what we feel like doing. Which idiom fits?", opts:["Play It by Ear","Hit the Books","Call It a Day","Jump the Gun"], ans:0 },
-    { type:"mcq", q:"What does 'Play It by Ear' mean?", opts:["Decide as you go, without a fixed plan","Listen to music","Play an instrument","Use headphones"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Play It by Ear'?", opts:["A family arrives at the beach and decides activities on the spot","A student follows a strict timetable","A boy plans every minute of his day","A teacher gives a detailed schedule"], ans:0 },
-    { type:"fitb", q:"We do not have a schedule, so we will just ___.", opts:["play it by ear","hit the books","burn the midnight oil","jump on the bandwagon"], ans:0 },
-    { type:"fitb", q:"I am not sure what time we will arrive, so let us ___.", opts:["play it by ear","call it a day","throw in the towel","cut corners"], ans:0 }
+    { type:"mcq", q:"We don't have a schedule, so we will decide as we go. Which idiom fits?", opts:["Play It by Ear","Throw in the Towel","Burn Bridges","Go Down in Flames"], ans:0 },
+    { type:"mcq", q:"What does 'Play It by Ear' mean?", opts:["Decide as you go, without a fixed plan","Listen carefully","Listen to music","Use your ears"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Play It by Ear'?", opts:["A group of friends goes on an adventure without a set map","A boy practises the piano","A girl listens to music","A teacher gives instructions"], ans:0 },
+    { type:"fitb", q:"We have not planned the trip yet — we will ___.", opts:["play it by ear","throw in the towel","burn bridges","jump the gun"], ans:0 },
+    { type:"fitb", q:"The weather is uncertain, so we will ___.", opts:["play it by ear","add fuel to the fire","cry over spilt milk","sit on the fence"], ans:0 }
   ],
   60: [
-    { type:"mcq", q:"Tina only applied to one college and did not get in. She should have applied to more. Which idiom fits?", opts:["Put All Your Eggs in One Basket","Miss the Boat","Back to Square One","Jump the Gun"], ans:0 },
-    { type:"mcq", q:"What does 'Put All Your Eggs in One Basket' mean?", opts:["Risk everything on a single plan","Go grocery shopping","Carry too many things","Make an omelette"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Put All Your Eggs in One Basket'?", opts:["A boy invests all his pocket money into one thing","A girl carefully organises her desk","A student tries three different approaches","A teacher gives multiple options"], ans:0 },
-    { type:"fitb", q:"Do not ___ — have a backup plan.", opts:["put all your eggs in one basket","cry over spilt milk","burn the midnight oil","hit the books"], ans:0 },
-    { type:"fitb", q:"She ___ by only preparing for one type of question.", opts:["put all her eggs in one basket","burned bridges","broke the ice","threw in the towel"], ans:0 }
+    { type:"mcq", q:"My mum says I should apply to different types of colleges, not just one. Which idiom fits?", opts:["Put All Your Eggs in One Basket","Go the Extra Mile","No Pain, No Gain","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Put All Your Eggs in One Basket' mean?", opts:["Risk everything on a single plan","Cook breakfast","Shop for groceries","Take care of your pets"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Put All Your Eggs in One Basket'?", opts:["A student applies to five different universities","A boy plays with an egg","A girl shops for food","A teacher assigns tasks"], ans:0 },
+    { type:"fitb", q:"Do not ___ — diversify your savings.", opts:["put all your eggs in one basket","let the cat out of the bag","burn the midnight oil","add fuel to the fire"], ans:0 },
+    { type:"fitb", q:"We need more options — we cannot ___.", opts:["put all our eggs in one basket","beat around the bush","bark up the wrong tree","burn bridges"], ans:0 }
   ],
   61: [
-    { type:"mcq", q:"Sana was excited about her birthday, but her brother complained about the cake flavour and ruined her mood. Which idiom fits?", opts:["Rain on Someone's Parade","Steal Someone's Thunder","Spill the Beans","Break the Ice"], ans:0 },
-    { type:"mcq", q:"What does 'Rain on Someone's Parade' mean?", opts:["Ruin someone's plans or happy mood","Cause a rainstorm","Walk in the rain","Cancel an event"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Rain on Someone's Parade'?", opts:["A boy tells his sister her painting is bad right after she finishes it proudly","A girl dances in the rain","A student watches a parade","A teacher brings umbrellas for the class"], ans:0 },
-    { type:"fitb", q:"I do not want to ___, but I think there is a problem with the plan.", opts:["rain on your parade","steal your thunder","break the ice","hit the books"], ans:0 },
-    { type:"fitb", q:"She ___ by pointing out all the flaws during his celebration.", opts:["rained on his parade","pulled his leg","broke the ice","burned the midnight oil"], ans:0 }
+    { type:"mcq", q:"Anil was excited about his birthday, and his sister told him it would be boring. Which idiom fits?", opts:["Rain on Someone's Parade","Break the Ice","Call It a Day","Go the Extra Mile"], ans:0 },
+    { type:"mcq", q:"What does 'Rain on Someone's Parade' mean?", opts:["Ruin someone's plans or happy mood","Spill water","Enjoy the rain","Go to a parade"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Rain on Someone's Parade'?", opts:["A boy discourages his friend who was excited about an idea","A girl walks in the rain","A boy plays outside","A teacher hands back papers"], ans:0 },
+    { type:"fitb", q:"I am sorry to ___ , but we have to postpone.", opts:["rain on your parade","break the ice","call it a day","hit the books"], ans:0 },
+    { type:"fitb", q:"She was really happy, so I did not want to ___.", opts:["rain on her parade","add fuel to the fire","cry over spilt milk","sit on the fence"], ans:0 }
   ],
   62: [
-    { type:"mcq", q:"The email said everything was fine, but Nila noticed something seemed off between the lines. Which idiom fits?", opts:["Read Between the Lines","Ring a Bell","See Eye to Eye","Make a Long Story Short"], ans:0 },
-    { type:"mcq", q:"What does 'Read Between the Lines' mean?", opts:["Understand the hidden meaning","Read every word carefully","Skip some lines while reading","Write between ruled lines"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Read Between the Lines'?", opts:["A girl notices her friend says she is fine but her face looks sad","A boy reads a book word by word","A student highlights key points","A teacher reads aloud"], ans:0 },
-    { type:"fitb", q:"She said she was not upset, but if you ___, she clearly was.", opts:["read between the lines","hit the books","burned the midnight oil","broke the ice"], ans:0 },
-    { type:"fitb", q:"The letter seemed cheerful, but ___ and you will see the worry.", opts:["read between the lines","make a long story short","beat around the bush","ring a bell"], ans:0 }
+    { type:"mcq", q:"She said she was happy, but her voice suggested otherwise. Which idiom fits?", opts:["Read Between the Lines","On Cloud Nine","A Blessing in Disguise","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Read Between the Lines' mean?", opts:["Understand the hidden meaning","Read very slowly","Read a book","Read aloud"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Read Between the Lines'?", opts:["A boy knows his friend is actually sad even though he said he is fine","A girl reads a novel","A student studies a textbook","A teacher reads to the class"], ans:0 },
+    { type:"fitb", q:"His note said he was busy, but if you ___, you know he is avoiding us.", opts:["read between the lines","are on cloud nine","are over the moon","are in the clear"], ans:0 },
+    { type:"fitb", q:"You have to ___ to understand how she really feels.", opts:["read between the lines","go the extra mile","go down in flames","jump on the bandwagon"], ans:0 }
   ],
   63: [
-    { type:"mcq", q:"The song sounded familiar, but Arjun could not remember where he had heard it. Which idiom fits?", opts:["Ring a Bell","Speak of the Devil","Hit the Nail on the Head","Under Your Nose"], ans:0 },
-    { type:"mcq", q:"What does 'Ring a Bell' mean?", opts:["Sound familiar","Make a phone call","Win a prize","Hear a doorbell"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Ring a Bell'?", opts:["A teacher mentions a name and a student vaguely remembers it","A girl rings the school bell","A boy answers the door","A student presses a buzzer in a quiz"], ans:0 },
-    { type:"fitb", q:"That name ___. Have I met her before?", opts:["rings a bell","breaks the ice","hits the books","burns bridges"], ans:0 },
-    { type:"fitb", q:"The place does not ___ — I do not think I have been there.", opts:["ring a bell","rock the boat","cost an arm and a leg","hit the nail on the head"], ans:0 }
+    { type:"mcq", q:"I have heard that name somewhere before. Which idiom fits?", opts:["Ring a Bell","Break the Ice","Piece of Cake","Hit the Nail on the Head"], ans:0 },
+    { type:"mcq", q:"What does 'Ring a Bell' mean?", opts:["Sound familiar","Answer the phone","Hear a bell sound","Be very loud"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Ring a Bell'?", opts:["A girl thinks she might have met that person before","A boy plays with a bell","A student listens to the school bell","A teacher rings a bell"], ans:0 },
+    { type:"fitb", q:"That title ___ — was it in our textbook?", opts:["rings a bell","breaks the ice","hits the books","goes the extra mile"], ans:0 },
+    { type:"fitb", q:"I am not sure where I saw him, but the name ___.", opts:["rings a bell","beats around the bush","barks up the wrong tree","calls it a day"], ans:0 }
   ],
   64: [
-    { type:"mcq", q:"Everyone was getting along well, and nobody wanted to cause any trouble before the big game. Which idiom fits?", opts:["Rock the Boat","Break the Ice","Throw in the Towel","Jump on the Bandwagon"], ans:0 },
-    { type:"mcq", q:"What does 'Rock the Boat' mean?", opts:["Cause trouble in a stable situation","Go sailing","Shake something","Dance on a ship"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Rock the Boat'?", opts:["A student brings up an argument right before a class trip","A girl rows a boat on a lake","A boy jumps on a trampoline","A teacher rearranges the furniture"], ans:0 },
-    { type:"fitb", q:"Things are going smoothly — please do not ___.", opts:["rock the boat","burn the midnight oil","hit the books","throw in the towel"], ans:0 },
-    { type:"fitb", q:"She did not want to ___ by asking for a different seat.", opts:["rock the boat","break the ice","miss the boat","spill the beans"], ans:0 }
+    { type:"mcq", q:"The team was working well, so nobody wanted to cause any trouble. Which idiom fits?", opts:["Rock the Boat","Throw in the Towel","Burn Bridges","Go Down in Flames"], ans:0 },
+    { type:"mcq", q:"What does 'Rock the Boat' mean?", opts:["Cause trouble in a stable situation","Move a boat","Sway in a chair","Play in the water"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Rock the Boat'?", opts:["A student avoids an argument in a happy team","A boy rows a boat","A girl plays with a toy boat","A teacher manages the class"], ans:0 },
+    { type:"fitb", q:"Everything is fine, so let's not ___.", opts:["rock the boat","burn the midnight oil","break the ice","jump on the bandwagon"], ans:0 },
+    { type:"fitb", q:"She was careful not to ___ during the meeting.", opts:["rock the boat","beat around the bush","bark up the wrong tree","add fuel to the fire"], ans:0 }
   ],
   65: [
-    { type:"mcq", q:"The students started the day with lots of energy, but by the afternoon they were too tired to continue. Which idiom fits?", opts:["Run Out of Steam","Throw in the Towel","Call It a Day","Get Cold Feet"], ans:0 },
-    { type:"mcq", q:"What does 'Run Out of Steam' mean?", opts:["Lose energy or enthusiasm","Boil water","Take a train","Breathe heavily"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Run Out of Steam'?", opts:["A boy studies hard for two hours then cannot focus any more","A girl fills a kettle with water","A student rides a steam train","A teacher opens a window to let in fresh air"], ans:0 },
-    { type:"fitb", q:"We started strong but ___ halfway through the hike.", opts:["ran out of steam","broke the ice","hit the nail on the head","jumped on the bandwagon"], ans:0 },
-    { type:"fitb", q:"The team ___ in the final quarter and could not keep up.", opts:["ran out of steam","burned bridges","rocked the boat","cut corners"], ans:0 }
+    { type:"mcq", q:"The team was playing well, but they stopped trying in the second half. Which idiom fits?", opts:["Run Out of Steam","Go the Extra Mile","No Pain, No Gain","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Run Out of Steam' mean?", opts:["Lose energy or enthusiasm","Use a steam engine","Get hot","Stop working"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Run Out of Steam'?", opts:["A team stops playing hard near the end of a long game","A boy boils water","A girl turns on a steamer","A teacher gives a lesson"], ans:0 },
+    { type:"fitb", q:"We had lots of ideas at first, but we soon ___.", opts:["ran out of steam","let the cat out of the bag","burned the midnight oil","added fuel to the fire"], ans:0 },
+    { type:"fitb", q:"They ___ near the end of the project.", opts:["ran out of steam","beat around the bush","barked up the wrong tree","burned bridges"], ans:0 }
   ],
   66: [
-    { type:"mcq", q:"Grandpa always puts a little money aside every month in case of emergencies. Which idiom fits?", opts:["Save for a Rainy Day","Once in a Blue Moon","Under the Weather","Up in the Air"], ans:0 },
-    { type:"mcq", q:"What does 'Save for a Rainy Day' mean?", opts:["Keep something for when you need it later","Buy an umbrella","Save water","Wait for rain"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Save for a Rainy Day'?", opts:["A girl keeps her birthday money in a piggy bank for future use","A boy buys a raincoat","A student waters the plants","A teacher checks the weather forecast"], ans:0 },
-    { type:"fitb", q:"Do not spend it all now — ___ instead.", opts:["save it for a rainy day","throw in the towel","burn the midnight oil","jump the gun"], ans:0 },
-    { type:"fitb", q:"She always ___ by keeping extra supplies in her drawer.", opts:["saves for a rainy day","puts all her eggs in one basket","cuts corners","rocks the boat"], ans:0 }
+    { type:"mcq", q:"Priya puts a few coins aside every week for later. Which idiom fits?", opts:["Save for a Rainy Day","Break the Ice","Call It a Day","Go the Extra Mile"], ans:0 },
+    { type:"mcq", q:"What does 'Save for a Rainy Day' mean?", opts:["Keep something for when you need it later","Save for bad weather","Save for the weekend","Wait for the rain"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Save for a Rainy Day'?", opts:["A boy saves money in case he needs it later","A girl buys an umbrella","A student prepares for a trip","A teacher gives a lesson"], ans:0 },
+    { type:"fitb", q:"I am not going to spend all my pocket money — I will ___.", opts:["save for a rainy day","break the ice","call it a day","hit the books"], ans:0 },
+    { type:"fitb", q:"She keeps some extra supplies ___.", opts:["to save for a rainy day","to beat around the bush","to bark up the wrong tree","to call it a day"], ans:0 }
   ],
   67: [
-    { type:"mcq", q:"We were talking about Arun, and just then he walked into the room. Which idiom fits?", opts:["Speak of the Devil","Ring a Bell","Under Your Nose","A Penny for Your Thoughts"], ans:0 },
-    { type:"mcq", q:"What does 'Speak of the Devil' mean?", opts:["The person you were just talking about appears","Talk about something scary","Whisper a secret","Tell a ghost story"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Speak of the Devil'?", opts:["Two friends discuss their absent teacher, who then walks in","A girl reads a book about monsters","A boy whispers a secret to his friend","A student tells a joke"], ans:0 },
-    { type:"fitb", q:"We were just talking about you — ___!", opts:["speak of the devil","a penny for your thoughts","ring a bell","once in a blue moon"], ans:0 },
-    { type:"fitb", q:"Well, ___ — here comes Neha right now!", opts:["speak of the devil","read between the lines","under your nose","better late than never"], ans:0 }
+    { type:"mcq", q:"As soon as they mentioned Rohan, he walked in. Which idiom fits?", opts:["Speak of the Devil","Break the Ice","Hit the Nail on the Head","Bark Up the Wrong Tree"], ans:0 },
+    { type:"mcq", q:"What does 'Speak of the Devil' mean?", opts:["The person you were just talking about appears","A demon is here","Someone is mean","Someone is very loud"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Speak of the Devil'?", opts:["A student you are talking about walks in suddenly","A boy plays a trick","A girl reads a story","A teacher enters the class"], ans:0 },
+    { type:"fitb", q:"___! I was just mentioning you.", opts:["Speak of the devil","Once in a blue moon","Better late than never","Under the weather"], ans:0 },
+    { type:"fitb", q:"Hey, look! ___ — he's finally here.", opts:["Speak of the devil","Time flies","No pain, no gain","The last straw"], ans:0 }
   ],
   68: [
-    { type:"mcq", q:"Ravi always exaggerates his cricket scores, so his friends do not fully believe him. Which idiom fits?", opts:["Take It with a Grain of Salt","Spill the Beans","Pull Someone's Leg","Ring a Bell"], ans:0 },
-    { type:"mcq", q:"What does 'Take It with a Grain of Salt' mean?", opts:["Do not believe it completely","Add salt to food","Taste something salty","Cook with care"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Take It with a Grain of Salt'?", opts:["A website makes big claims but has no proof","A girl adds salt to her soup","A boy seasons his fries","A teacher measures ingredients for science"], ans:0 },
-    { type:"fitb", q:"He says he ran ten kilometres, but I would ___ that.", opts:["take it with a grain of salt","burn the midnight oil","hit the books","call it a day"], ans:0 },
-    { type:"fitb", q:"Online reviews should be ___ — not all of them are honest.", opts:["taken with a grain of salt","beaten around the bush","thrown in the towel","put in one basket"], ans:0 }
+    { type:"mcq", q:"Rohan tends to exaggerate his stories, so don't believe everything he says. Which idiom fits?", opts:["Take It with a Grain of Salt","Actions Speak Louder Than Words","Better Late Than Never","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'Take It with a Grain of Salt' mean?", opts:["Do not believe it completely","Add salt","It is delicious","Do not listen"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Take It with a Grain of Salt'?", opts:["A girl is told a story she is not sure is true","A boy eats his dinner","A student helps a friend","A teacher talks about history"], ans:0 },
+    { type:"fitb", q:"He likes to exaggerate, so ___.", opts:["take his stories with a grain of salt","time flies","the ball is in your court","every cloud has a silver lining"], ans:0 },
+    { type:"fitb", q:"I would ___ the report — it might be biased.", opts:["take it with a grain of salt","actions speak louder than words","a picture is worth a thousand words","two heads are better than one"], ans:0 }
   ],
   69: [
-    { type:"mcq", q:"Living near the mountains gives Tina access to both skiing and hiking. Which idiom fits?", opts:["The Best of Both Worlds","Once in a Blue Moon","The Tip of the Iceberg","A Blessing in Disguise"], ans:0 },
-    { type:"mcq", q:"What does 'The Best of Both Worlds' mean?", opts:["Enjoy two good things at the same time","Travel to two countries","Have two favourite foods","Win two awards"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'The Best of Both Worlds'?", opts:["A boy lives close to both the beach and the city","A girl chooses between two hobbies","A student picks one sport to play","A teacher gives either a quiz or homework, not both"], ans:0 },
-    { type:"fitb", q:"Working part-time while studying gives me ___.", opts:["the best of both worlds","the tip of the iceberg","the last straw","the elephant in the room"], ans:0 },
-    { type:"fitb", q:"This school has sports and music programmes — it is ___.", opts:["the best of both worlds","back to square one","up in the air","once in a blue moon"], ans:0 }
+    { type:"mcq", q:"She works from home, so she can be with her kids and still get her job done. Which idiom fits?", opts:["The Best of Both Worlds","Go the Extra Mile","No Pain, No Gain","The Tip of the Iceberg"], ans:0 },
+    { type:"mcq", q:"What does 'The Best of Both Worlds' mean?", opts:["Enjoy two good things at the same time","Be in two places at once","Travel to two places","Win two awards"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'The Best of Both Worlds'?", opts:["A girl gets to play and study at the same time","A boy enjoys his cake","A student reads","A teacher teaches"], ans:0 },
+    { type:"fitb", q:"By cycling, you get exercise and avoid traffic — it is ___.", opts:["the best of both worlds","letting the cat out of the bag","burning the midnight oil","adding fuel to the fire"], ans:0 },
+    { type:"fitb", q:"Living near the city and the beach gives you ___.", opts:["the best of both worlds","beating around the bush","barking up the wrong tree","burning bridges"], ans:0 }
   ],
   70: [
-    { type:"mcq", q:"Diya and Meera have been best friends for years and have supported each other no matter what. Which idiom fits?", opts:["Through Thick and Thin","Once in a Blue Moon","On Cloud Nine","At the Drop of a Hat"], ans:0 },
-    { type:"mcq", q:"What does 'Through Thick and Thin' mean?", opts:["In good times and bad times","Moving through a forest","Eating thick and thin bread","Changing weight"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Through Thick and Thin'?", opts:["Two brothers stand by each other even when things are difficult","A girl measures the thickness of paper","A boy reads a thick book","A student folds thin sheets"], ans:0 },
-    { type:"fitb", q:"True friends stand by each other ___.", opts:["through thick and thin","once in a blue moon","when pigs fly","under the weather"], ans:0 },
-    { type:"fitb", q:"She has supported me ___ — I am lucky to have her.", opts:["through thick and thin","at the drop of a hat","on the same page","on cloud nine"], ans:0 }
+    { type:"mcq", q:"Best friends stay together through good times and bad times. Which idiom fits?", opts:["Through Thick and Thin","Back to Square One","A Blessing in Disguise","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Through Thick and Thin' mean?", opts:["In good times and bad times","Through the forest","Walking slowly","Being happy"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Through Thick and Thin'?", opts:["A student supports his friend during a difficult illness","A boy runs through a thick forest","A girl reads a book","A teacher helps a student"], ans:0 },
+    { type:"fitb", q:"We have been teammates ___ for years.", opts:["through thick and thin","on cloud nine","over the moon","in the clear"], ans:0 },
+    { type:"fitb", q:"She stood by her friend ___.", opts:["through thick and thin","the extra mile","down in flames","on the bandwagon"], ans:0 }
   ],
   71: [
-    { type:"mcq", q:"The summer holidays went by so quickly that it felt like they had just started. Which idiom fits?", opts:["Time Flies","Once in a Blue Moon","Better Late Than Never","When Pigs Fly"], ans:0 },
-    { type:"mcq", q:"What does 'Time Flies' mean?", opts:["Time passes very quickly","Clocks can fly","Time stops","Hours are long"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Time Flies'?", opts:["A girl cannot believe it is already December","A boy checks his watch every five minutes","A student is bored during a long lecture","A teacher sets a timer for a test"], ans:0 },
-    { type:"fitb", q:"It is already Friday? ___!", opts:["Time flies","No pain, no gain","Better late than never","Once in a blue moon"], ans:0 },
-    { type:"fitb", q:"___ when you are having fun — the party was over before we knew it.", opts:["Time flies","The ball is in your court","Actions speak louder than words","Every cloud has a silver lining"], ans:0 }
+    { type:"mcq", q:"An hour of playing games felt like just five minutes! Which idiom fits?", opts:["Time Flies","Break the Ice","Piece of Cake","Hit the Nail on the Head"], ans:0 },
+    { type:"mcq", q:"What does 'Time Flies' mean?", opts:["Time passes very quickly","Time has wings","Time is very slow","Clocks are fast"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Time Flies'?", opts:["A group of students enjoys a lesson so much it ends too quickly","A boy watches a clock","A girl waits for her bus","A teacher checks the time"], ans:0 },
+    { type:"fitb", q:"I cannot believe it is already dark — ___!", opts:["time flies","break the ice","hit the books","go the extra mile"], ans:0 },
+    { type:"fitb", q:"When you are having fun, ___.", opts:["time flies","beat around the bush","bark up the wrong tree","call it a day"], ans:0 }
   ],
   72: [
-    { type:"mcq", q:"After getting bad marks, Rohan decided to change his habits and start studying regularly. Which idiom fits?", opts:["Turn Over a New Leaf","Throw in the Towel","Call It a Day","Go Down in Flames"], ans:0 },
-    { type:"mcq", q:"What does 'Turn Over a New Leaf' mean?", opts:["Make a fresh start and change your behaviour","Pick up a fallen leaf","Open a new book","Rake leaves in the garden"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Turn Over a New Leaf'?", opts:["A girl who was always late decides to wake up early every day","A boy rakes autumn leaves","A student flips to the next page","A teacher plants a tree"], ans:0 },
-    { type:"fitb", q:"After the holidays, I am going to ___ and exercise every morning.", opts:["turn over a new leaf","throw in the towel","call it a day","burn the midnight oil"], ans:0 },
-    { type:"fitb", q:"He promised to ___ and stop being rude to his classmates.", opts:["turn over a new leaf","jump on the bandwagon","sit on the fence","beat around the bush"], ans:0 }
+    { type:"mcq", q:"After failing the test, Ravi decided he would study properly every day from now on. Which idiom fits?", opts:["Turn Over a New Leaf","Throw in the Towel","Burn Bridges","Go Down in Flames"], ans:0 },
+    { type:"mcq", q:"What does 'Turn Over a New Leaf' mean?", opts:["Make a fresh start and change your behaviour","Change your hairstyle","Read a new book","Walk through a forest"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Turn Over a New Leaf'?", opts:["A student decides to be more responsible after a bad grade","A boy changes his shoes","A girl paints a leaf","A teacher explains a lesson"], ans:0 },
+    { type:"fitb", q:"He promised to ___ and stop being late to class.", opts:["turn over a new leaf","burn the midnight oil","break the ice","jump on the bandwagon"], ans:0 },
+    { type:"fitb", q:"After her mistake, she decided to ___.", opts:["turn over a new leaf","beat around the bush","bark up the wrong tree","add fuel to the fire"], ans:0 }
   ],
   73: [
-    { type:"mcq", q:"The maths problem was tricky, so Asha and Dev worked on it together and solved it faster. Which idiom fits?", opts:["Two Heads Are Better Than One","Kill Two Birds with One Stone","See Eye to Eye","Actions Speak Louder Than Words"], ans:0 },
-    { type:"mcq", q:"What does 'Two Heads Are Better Than One' mean?", opts:["Working together is better than working alone","Having two heads","Thinking twice","Being smarter than others"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Two Heads Are Better Than One'?", opts:["Two friends brainstorm ideas and come up with a great solution","A boy solves a puzzle alone","A girl finishes her test first","A student reads by herself"], ans:0 },
-    { type:"fitb", q:"Let us do the project together — ___.", opts:["two heads are better than one","it takes two to tango","no pain, no gain","time flies"], ans:0 },
-    { type:"fitb", q:"I was stuck, but once my friend helped, we solved it — ___.", opts:["two heads are better than one","a penny for your thoughts","every cloud has a silver lining","the ball is in your court"], ans:0 }
+    { type:"mcq", q:"Doing the project together is easier than alone. Which idiom fits?", opts:["Two Heads Are Better Than One","Go the Extra Mile","No Pain, No Gain","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Two Heads Are Better Than One' mean?", opts:["Working together is better than working alone","You are taller","People have big heads","Two people are faster"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Two Heads Are Better Than One'?", opts:["A boy and girl work together to solve a difficult maths problem","A student works alone","A girl plays music","A teacher gives homework"], ans:0 },
+    { type:"fitb", q:"Let's discuss this together — ___.", opts:["two heads are better than one","let the cat out of the bag","burn the midnight oil","add fuel to the fire"], ans:0 },
+    { type:"fitb", q:"We cannot figure this out — let's ask for help, ___.", opts:["two heads are better than one","beating around the bush","barking up the wrong tree","burning bridges"], ans:0 }
   ],
   74: [
-    { type:"mcq", q:"Isha never hides her feelings — everyone can always tell if she is happy or sad. Which idiom fits?", opts:["Wear Your Heart on Your Sleeve","Read Between the Lines","Keep Your Chin Up","See Eye to Eye"], ans:0 },
-    { type:"mcq", q:"What does 'Wear Your Heart on Your Sleeve' mean?", opts:["Show your emotions openly","Wear a special shirt","Hide your feelings","Have heart surgery"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Wear Your Heart on Your Sleeve'?", opts:["A boy's face always shows exactly how he feels","A girl wears a heart-shaped necklace","A student writes about the heart in science","A teacher draws a heart on the board"], ans:0 },
-    { type:"fitb", q:"She ___ — you can always tell when something is wrong.", opts:["wears her heart on her sleeve","reads between the lines","keeps her chin up","sits on the fence"], ans:0 },
-    { type:"fitb", q:"He is not good at hiding emotions — he ___.", opts:["wears his heart on his sleeve","pulls people's legs","breaks the ice","beats around the bush"], ans:0 }
+    { type:"mcq", q:"She shows her emotions freely, so you always know how she feels. Which idiom fits?", opts:["Wear Your Heart on Your Sleeve","On Cloud Nine","A Blessing in Disguise","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Wear Your Heart on Your Sleeve' mean?", opts:["Show your emotions openly","Wear your clothes inside out","Have a heart on your sleeve","Be very quiet"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Wear Your Heart on Your Sleeve'?", opts:["A girl talks about her feelings freely to her friends","A boy buys a jacket","A student sits in class","A teacher speaks clearly"], ans:0 },
+    { type:"fitb", q:"It is easy to tell how he feels — he ___.", opts:["wears his heart on his sleeve","lets the cat out of the bag","burns the midnight oil","adds fuel to the fire"], ans:0 },
+    { type:"fitb", q:"She ___ — you always know when she is happy or sad.", opts:["wears her heart on her sleeve","beats around the bush","barks up the wrong tree","burns bridges"], ans:0 }
   ],
   75: [
-    { type:"mcq", q:"The chart explained the data much better than the long report did. Which idiom fits?", opts:["A Picture Is Worth a Thousand Words","Read Between the Lines","Make a Long Story Short","Actions Speak Louder Than Words"], ans:0 },
-    { type:"mcq", q:"What does 'A Picture Is Worth a Thousand Words' mean?", opts:["An image can explain more than words can","Pictures are expensive","Take lots of photos","Words are useless"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'A Picture Is Worth a Thousand Words'?", opts:["A diagram makes a complicated science topic easy to understand","A girl writes a long essay with no pictures","A boy reads a book with no illustrations","A teacher gives a spoken explanation"], ans:0 },
-    { type:"fitb", q:"Just look at this photo of the sunset — ___.", opts:["a picture is worth a thousand words","actions speak louder than words","make a long story short","two heads are better than one"], ans:0 },
-    { type:"fitb", q:"Instead of describing the damage, she showed a video — ___.", opts:["a picture is worth a thousand words","better late than never","no pain, no gain","time flies"], ans:0 }
+    { type:"mcq", q:"The diagram showed the mess perfectly, explaining more than a long report. Which idiom fits?", opts:["A Picture Is Worth a Thousand Words","Actions Speak Louder Than Words","Better Late Than Never","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'A Picture Is Worth a Thousand Words' mean?", opts:["An image can explain more than words can","Pictures are beautiful","Words are useless","A picture costs a lot"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'A Picture Is Worth a Thousand Words'?", opts:["A graph clearly shows the data that was hard to explain","A boy draws a picture","A girl reads a book","A teacher talks"], ans:0 },
+    { type:"fitb", q:"The diagram was so clear — ___.", opts:["a picture is worth a thousand words","time flies","the ball is in your court","every cloud has a silver lining"], ans:0 },
+    { type:"fitb", q:"I did not understand the instructions until she showed me — ___.", opts:["a picture is worth a thousand words","actions speak louder than words","a penny for your thoughts","two heads are better than one"], ans:0 }
   ],
   76: [
-    { type:"mcq", q:"Mum told me not to worry about what happens next year — we can deal with it when the time comes. Which idiom fits?", opts:["Cross That Bridge When You Come to It","Back to Square One","The Tip of the Iceberg","The Elephant in the Room"], ans:0 },
-    { type:"mcq", q:"What does 'Cross That Bridge When You Come to It' mean?", opts:["Deal with a problem only when it actually happens","Walk across a bridge","Build a bridge","Avoid all bridges"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Cross That Bridge When You Come to It'?", opts:["A dad tells his son not to worry about college admissions in Grade 6","A boy crosses a wooden bridge","A girl builds a bridge out of blocks","A teacher shows photos of famous bridges"], ans:0 },
-    { type:"fitb", q:"We do not know if it will rain — let us ___.", opts:["cross that bridge when we come to it","burn the midnight oil","throw in the towel","jump the gun"], ans:0 },
-    { type:"fitb", q:"Do not stress about the final round yet — ___.", opts:["cross that bridge when you come to it","put all your eggs in one basket","go back to the drawing board","add fuel to the fire"], ans:0 }
+    { type:"mcq", q:"We will worry about that problem only if it actually happens. Which idiom fits?", opts:["Cross That Bridge When You Come to It","Speak of the Devil","Ring a Bell","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'Cross That Bridge When You Come to It' mean?", opts:["Deal with a problem only when it actually happens","Walk over a bridge","Plan for everything early","Avoid all problems"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Cross That Bridge When You Come to It'?", opts:["A teacher decides not to worry about a potential issue until it arises","A boy crosses a bridge","A girl walks to school","A student studies"], ans:0 },
+    { type:"fitb", q:"I know you are worried, but let's ___.", opts:["cross that bridge when we come to it","break the ice","hit the books","go the extra mile"], ans:0 },
+    { type:"fitb", q:"We do not have a test yet, so we will ___.", opts:["cross that bridge when we come to it","beat around the bush","bark up the wrong tree","call it a day"], ans:0 }
   ],
   77: [
-    { type:"mcq", q:"Losing the first match made the team practise harder, and they ended up winning the tournament. Which idiom fits?", opts:["Every Cloud Has a Silver Lining","The Tip of the Iceberg","The Last Straw","A Taste of Your Own Medicine"], ans:0 },
-    { type:"mcq", q:"What does 'Every Cloud Has a Silver Lining' mean?", opts:["Something good comes from every bad situation","Clouds are made of silver","Bad weather is coming","Rain brings problems"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Every Cloud Has a Silver Lining'?", opts:["A girl who broke her arm discovers she is good at writing with her other hand","A boy watches clouds in the sky","A student draws a cloud","A teacher talks about weather"], ans:0 },
-    { type:"fitb", q:"Getting lost led us to a beautiful garden — ___.", opts:["every cloud has a silver lining","the tip of the iceberg","the elephant in the room","the last straw"], ans:0 },
-    { type:"fitb", q:"The power cut meant we played board games as a family — ___.", opts:["every cloud has a silver lining","a picture is worth a thousand words","two heads are better than one","time flies"], ans:0 }
+    { type:"mcq", q:"Losing the match was tough, but we learned a lot from it. Which idiom fits?", opts:["Every Cloud Has a Silver Lining","Actions Speak Louder Than Words","Better Late Than Never","Time Flies"], ans:0 },
+    { type:"mcq", q:"What does 'Every Cloud Has a Silver Lining' mean?", opts:["Something good comes from every bad situation","Clouds have silver","Clouds are beautiful","It is sunny"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Every Cloud Has a Silver Lining'?", opts:["A boy finds a new hobby after his old one was cancelled","A girl looks at a cloud","A student reads a book","A teacher gives a lesson"], ans:0 },
+    { type:"fitb", q:"Do not be sad — ___.", opts:["every cloud has a silver lining","time flies","the ball is in your court","a penny for your thoughts"], ans:0 },
+    { type:"fitb", q:"Missing the train was annoying, but ___: I met an old friend at the station.", opts:["every cloud has a silver lining","actions speak louder than words","a picture is worth a thousand words","two heads are better than one"], ans:0 }
   ],
   78: [
-    { type:"mcq", q:"The poster design did not work, so the team started planning a completely new one. Which idiom fits?", opts:["Go Back to the Drawing Board","Back to Square One","Throw in the Towel","Call It a Day"], ans:0 },
-    { type:"mcq", q:"What does 'Go Back to the Drawing Board' mean?", opts:["Start planning again from scratch","Draw a picture","Erase a whiteboard","Visit an art gallery"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Go Back to the Drawing Board'?", opts:["A group scraps their project idea and comes up with a fresh one","A boy draws on a chalkboard","A girl cleans the whiteboard","A teacher hands out blank paper"], ans:0 },
-    { type:"fitb", q:"The recipe did not taste right, so we had to ___.", opts:["go back to the drawing board","throw in the towel","jump the gun","burn bridges"], ans:0 },
-    { type:"fitb", q:"Our first attempt failed — time to ___.", opts:["go back to the drawing board","call it a day","cut corners","sit on the fence"], ans:0 }
+    { type:"mcq", q:"The design wasn't working, so the team had to rethink their whole strategy. Which idiom fits?", opts:["Go Back to the Drawing Board","Throw in the Towel","Burn Bridges","Go Down in Flames"], ans:0 },
+    { type:"mcq", q:"What does 'Go Back to the Drawing Board' mean?", opts:["Start planning again from scratch","Draw a new picture","Clean the board","Buy new paper"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Go Back to the Drawing Board'?", opts:["A team redesigns their project after the first idea fails","A boy draws","A girl paints","A teacher erases the board"], ans:0 },
+    { type:"fitb", q:"The plan failed, so we had to ___.", opts:["go back to the drawing board","burn the midnight oil","break the ice","jump on the bandwagon"], ans:0 },
+    { type:"fitb", q:"We need a better idea — let's ___.", opts:["go back to the drawing board","beat around the bush","bark up the wrong tree","add fuel to the fire"], ans:0 }
   ],
   79: [
-    { type:"mcq", q:"Everyone knew there was a problem with the seating plan, but nobody wanted to bring it up. Which idiom fits?", opts:["The Elephant in the Room","The Tip of the Iceberg","The Last Straw","Under Your Nose"], ans:0 },
-    { type:"mcq", q:"What does 'The Elephant in the Room' mean?", opts:["An obvious problem that nobody talks about","A large animal in a building","A big surprise","A crowded space"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'The Elephant in the Room'?", opts:["A family avoids talking about the broken TV even though everyone notices it","A girl visits a zoo","A boy watches a nature documentary","A teacher shows pictures of elephants"], ans:0 },
-    { type:"fitb", q:"Nobody mentioned the failing grade — it was ___.", opts:["the elephant in the room","the tip of the iceberg","the last straw","a blessing in disguise"], ans:0 },
-    { type:"fitb", q:"We all saw the mistake, but it became ___ that nobody dared to point out.", opts:["the elephant in the room","the ball in your court","the best of both worlds","once in a blue moon"], ans:0 }
+    { type:"mcq", q:"Everyone was ignoring the fact that the project was unfinished, even though it was obvious. Which idiom fits?", opts:["The Elephant in the Room","The Tip of the Iceberg","A Blessing in Disguise","The Last Straw"], ans:0 },
+    { type:"mcq", q:"What does 'The Elephant in the Room' mean?", opts:["An obvious problem that nobody talks about","A zoo in the classroom","A large pet","A messy room"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'The Elephant in the Room'?", opts:["A group avoids mentioning that a classmate is missing, though everyone notices","A boy plays with a toy elephant","A girl cleans her room","A teacher asks a question"], ans:0 },
+    { type:"fitb", q:"Nobody is mentioning that the project is due today — it is ___.", opts:["the elephant in the room","the tip of the iceberg","a piece of cake","a blessing in disguise"], ans:0 },
+    { type:"fitb", q:"The broken table was ___ during our meeting.", opts:["the elephant in the room","the best of both worlds","every cloud has a silver lining","a penny for your thoughts"], ans:0 }
   ],
   80: [
-    { type:"mcq", q:"The science topic was so confusing that Ria could not understand it no matter how many times she read it. Which idiom fits?", opts:["Wrap Your Head Around","Hit the Books","Burn the Midnight Oil","Break the Ice"], ans:0 },
-    { type:"mcq", q:"What does 'Wrap Your Head Around' mean?", opts:["Understand something complicated","Wear a headband","Think very fast","Cover your head"], ans:0 },
-    { type:"mcq", q:"Which situation best matches 'Wrap Your Head Around'?", opts:["A boy stares at a difficult maths problem for ten minutes","A girl wraps a gift","A student ties a scarf","A teacher rolls up a poster"], ans:0 },
-    { type:"fitb", q:"I still cannot ___ how magnets actually work.", opts:["wrap my head around","hit the books on","burn the midnight oil for","break the ice with"], ans:0 },
-    { type:"fitb", q:"It took me a week to ___ the new coding language.", opts:["wrap my head around","throw in the towel on","jump the gun on","cry over spilt milk about"], ans:0 }
+    { type:"mcq", q:"I am really trying to understand this complicated science topic. Which idiom fits?", opts:["Wrap Your Head Around","Go the Extra Mile","No Pain, No Gain","The Best of Both Worlds"], ans:0 },
+    { type:"mcq", q:"What does 'Wrap Your Head Around' mean?", opts:["Understand something complicated","Wear a hat","Put your hands on your head","Feel confused"], ans:0 },
+    { type:"mcq", q:"Which situation best matches 'Wrap Your Head Around'?", opts:["A student works hard to understand a difficult new concept","A boy wears a hat","A girl thinks hard","A teacher explains"], ans:0 },
+    { type:"fitb", q:"This formula is hard; I cannot ___ it yet.", opts:["wrap my head around","let the cat out of the bag","burn the midnight oil","add fuel to the fire"], ans:0 },
+    { type:"fitb", q:"It took me a while to ___ the new rules.", opts:["wrap my head around","beat around the bush","bark up the wrong tree","burn bridges"], ans:0 }
   ]
 };

@@ -1,0 +1,5 @@
+{
+  "name": "Idiom Café",
+  "description": "Master 80 everyday idioms through flashcards, quizzes, and fill-in-the-blank challenges. A fresh menu every session.",
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
