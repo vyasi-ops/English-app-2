@@ -148,7 +148,7 @@ function renderMCQ() {
     document.getElementById('mcqBody').innerHTML =
       '<div class="done-box">' +
       '<div class="done-title">MCQs complete!</div>' +
-      '<p style="color:var(--brown-500);margin-bottom:16px;">You scored ' + mcqScore + ' out of ' + mcqList.length + '.</p>' +
+      '<p style="color:var(--text-body);margin-bottom:16px;">You scored ' + mcqScore + ' out of ' + mcqList.length + '.</p>' +
       '<button class="btn-primary full" id="startFITB">Continue to fill in the blanks →</button></div>';
     document.getElementById('startFITB').addEventListener('click', startFITB);
     return;
